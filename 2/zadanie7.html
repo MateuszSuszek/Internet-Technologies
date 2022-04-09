@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Title of the document</title>
+<meta charset="UTF-8">
+
+<style>
+a
+{
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	text-decoration:none;
+	
+	display: block;
+	color:#fff;
+	padding: 8px 40px;
+	height:20px;width:40px;
+	border-radius: 3px;
+	box-shadow: 3px 3px 8px #888888;
+	border: 1px solid #7a7a7a;
+	background: -webkit-linear-gradient(top, #a9a9a9 0%, #929292 16px, #818181 17px, #989898 100%);
+	-webkit-transition: background 0.2s, width 0.2s, height 0.2s, font-size 0.2s;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	height:25px;width:50px;
+	font-size: 12pt;
+}
+
+a:active
+{
+	height:40px;width:80px;
+	font-size: 20pt;
+}
+
+label
+{
+	font-family: Arial, sans-serif;
+	font-size: 12pt; 	
+	text-decoration:none;
+}
+
+input
+{
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	text-decoration:none;
+	
+	display: block;
+	color: white;
+	padding: 5px 5px;
+	height:22px; width:150px;
+	border-radius: 3px;
+	border: 1px solid black;
+	background: grey;
+	-webkit-transition: background 0.2s, width 0.2s, height 0.2s, font-size 0.2s;
+}
+
+input:focus
+{
+	width:300px;
+}
+
+</style>
+</head>
+
+<body>
+
+<form>
+	<label for="first_name">First name:</label><br>
+	<input type="text" id="first_name" name="first_name"><br><br>
+	
+	<label for="last_name">Last name:</label><br>
+	<input type="text" id="last_name" name="last_name"><br><br>
+	
+	<label for="address">Address:</label><br>
+	<input type="text" id="address" name="address" pattern="([A-Za-z]+ [0-9]+)|([A-Za-z]+ [0-9]+/[0-9]+)+"><br><br>
+	
+	<a href="#">Submit</a>
+</form>	
+	
+</body>
+
+</html>

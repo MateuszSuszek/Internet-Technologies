@@ -1,0 +1,12 @@
+.container {
+    margin: auto;
+    width: 15%;
+    border: 7px solid orange;
+    padding: 40px;
+}
+
+.center {
+    margin: auto;
+    width: 25%;
+    padding: 5px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Set 3 Exercise 1</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="E1styleSheet.css">
+
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<form  id="mainForm" method="post">
+				<h1>Bank Transfer</h1>
+
+				<div class="field">
+					<label for="accNum">Account number:</label><br>
+					<input type="text" id="accNum" name="accNum" onchange="return validateAccNum()" placeholder="000000" />
+					<p class="errMsg" id="accNumErrTxt"></p>
+				</div>
+
+				<div class="field">
+					<label for="pesel">PESEL:</label><br>
+					<input type="text" id="pesel" name="pesel" onchange="return validatePesel()" placeholder="000000000000" />
+					<p class="errMsg" id="peselErrTxt"></p>
+				</div>
+
+				<div class="field">
+					<label for="birthDate">Birth date:</label><br>
+					<input type="date" id="birthDate" name="birthDate" onchange="return validateBirthDate()" placeholder="DD.MM.YYYY" />
+					<p class="errMsg" id="birthDateErrTxt"></p>
+				</div>
+
+				<div class="field">
+					<label for="email">Email:</label><br>
+					<input type="text" id="email" name="email" onchange="return validateEmail()" placeholder="foo@bar.xyz" />
+					<p class="errMsg" id="emailErrTxt"></p>
+				</div>
+
+				<div class="field">
+					
+					<input type="submit" value="Submit">
+					<p class="regMsg" id="formSubmitTxt"></p>
+
+				</div>
+			
+			</form>	
+
+		</div>
+
+		<script src="E1script.js"></script>
+
+		<!-- -->
+		
+	</body>
+
+</html>

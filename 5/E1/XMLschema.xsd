@@ -1,0 +1,38 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="form" type="formType"/>
+
+  <xs:complexType name="formType">
+    <xs:sequence>
+      <xs:element name="accnum" type="accountNumber"/>
+      <xs:element name="pesel" type="peselNumber"/>
+      <xs:element name="birthdate" type="birthdate"/>
+      <xs:element name="email" type="emailAddress"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:simpleType name="accountNumber">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{26}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="peselNumber">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{11}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="birthdate">
+      <xs:restriction base="xs:date">
+      </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="emailAddress">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^@]+@[^\.]+\..+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

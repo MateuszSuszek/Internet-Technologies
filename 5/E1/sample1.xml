@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="XMLschema.xsd">
+  
+  <accnum>00000000000000000000000000</accnum>
+  
+  <pesel>12345678900</pesel>
+  
+  <birthdate>2021-12-15</birthdate>
+
+  <email>324132@uwr.edu.pl</email>
+
+</form>

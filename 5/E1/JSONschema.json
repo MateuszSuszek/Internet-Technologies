@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Form",
+  "type": "object",
+ 
+  "properties": {
+ 
+    "accountNumber": {
+      "type": "string",
+      "description": "Your account number.",
+      "label": "accnum",
+      "input-type": "text",
+      "pattern": "^[0-9]{26}$"
+    },
+   
+    "peselNumber": {
+      "type": "string",
+      "description": "Your PESEL number.",
+      "label": "pesel",
+      "input-type": "text",
+      "pattern": "^[0-9]{11}$"
+    },
+   
+    "birthdate": {
+      "type": "string",
+      "description": "The date of your birth.",
+      "label": "birthdate",
+      "input-type": "text",
+      "format": "date"
+    },
+
+    "emailAddress": {
+      "type": "string",
+      "description": "Your email address.",
+      "label": "email",
+      "input-type": "text",
+      "format": "email"
+    }
+  }
+}

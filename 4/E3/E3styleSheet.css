@@ -1,0 +1,25 @@
+div.container {
+    width: 200px;
+    height: 200px;
+    border: solid 1px #000;
+}
+
+div.square { 
+    box-sizing: border-box;
+    float: left;
+    width: 50px; 
+    height: 50px; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.unmarked {
+    border: 1px solid #404040;
+}
+
+div.marked {
+    border: 2px solid red;
+}
